@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+* {
+	box-sizing: border-box;
+}
+
+body{
+  padding-top: 20px;
+   font-family:'Roboto Mono', monospace;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   margin: 0;
+   background-color: rgba(75, 1, 94, 0.808);
+}
+.container {
+    border: 1px solid rgb(10, 99, 126);
+    margin: 25px;
+    padding: 16px; 
+    border-radius: 40px;
+    background-image: linear-gradient(to left, #1616f1a6,rgb(90, 158, 163), #dd11dddc);
+    font-style: italic;
+    font-family: 'Courgette', cursive;
+    flex-wrap: wrap;
+   }
+  div {
+    text-align: center;
+        font-size: 18px;
+        transition: width 2s, height 2s, transform 2s;
+ 
+  }
+  span{
+    font-weight: bold;
+  }
+  .image {
+    width: 500px;
+    height: 450px;
+    object-fit:contain;
+    border-radius: 50%;
+  }
+
+  p {
+    text-indent: 50px;
+    text-align: justify;
+  }
+  h1{
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .image,h1,.container {
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: 1;
+  }
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+  
