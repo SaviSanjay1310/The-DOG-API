@@ -25,9 +25,7 @@ body{
    }
   div {
     text-align: center;
-        font-size: 18px;
-        transition: width 2s, height 2s, transform 2s;
- 
+    font-size: 18px;
   }
   span{
     font-weight: bold;
@@ -47,8 +45,8 @@ body{
     text-transform: uppercase;
     text-align: center;
   }
-  .image,h1,.container {
-    animation-duration: 3s;
+  .image,h1 {
+    animation-duration: 2s;
     animation-name: slidein;
     animation-iteration-count: 1;
   }
